@@ -1,0 +1,21 @@
+:root {
+    --color-dark: #16110D;
+    --color-blue: #13D4FF;
+    --color-light-blue: #45F3FF;
+    --color-white: #fff;
+
+    --color-text-dark: #000;
+
+    --font-family-main: "Open Sans", sans-serif;
+    --font-family-second: "Montserrat", sans-serif;
+
+    --font-size-big: 40px;
+    --font-size-average: 21px;
+    --font-size-standart: 18px;
+
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --border-radius-big: 90px;
+}

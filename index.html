@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ART</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo" href="#header">
+                <img class="logo__img" src="img/logo.png" alt="logo">
+            </a>
+            <a class="tel" href="tel:+79609528155">+7 (960) 952 81 55</a>
+            <div class="location">
+                <img class="location__img" src="img/location.svg" alt="location">
+                <div class="location__info">
+                    <p class="location__info-text">
+                        г. Барнаул, ул. Новгородская, 22
+                    </p>
+                    <p class="location__info-text">
+                        г. Бийск, ул. Васильева, 65
+                    </p>
+                </div>
+            </div>
+            <button class="header__btn btn">Позвонить</button>
+        </div>
+
+        <div class="header__inner_tel">
+            <a class="logo" href="#header">
+                <img class="logo__img" src="img/logo.png" alt="logo">
+            </a>
+            <button class="location__btn">
+                <svg width="15" height="20" viewBox="0 0 23 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M17.9685 12.2716C17.9685 11.1221 17.8495 10.2115 17.3814 9.26494C17.0562 8.60662 16.6428 7.97053 16.1233 7.45219C13.5637 4.89879 9.43096 4.89755 6.90884 7.41967C3.86592 10.4626 4.53618 15.7798 8.66724 17.8482C11.1523 19.0924 14.1969 18.4826 16.1224 16.5682C17.0154 15.6806 17.9681 14.028 17.9681 12.272L17.9685 12.2716ZM23 10.834C23 12.7846 22.8798 13.3198 22.2404 15.2363C21.9448 16.1232 21.191 18.0434 20.7788 18.8717L18.013 24.3388C17.8829 24.5994 17.7701 24.7657 17.6425 25.0136C16.6169 26.9996 14.9754 29.5279 13.8078 31.5029C13.1927 32.5437 12.758 33.4424 11.4347 33.4424C10.2482 33.4424 9.75539 32.4449 9.21605 31.5445C7.89941 29.3455 6.66759 27.3792 5.40241 25.0996L2.59127 19.6778C1.72628 17.9614 -9.53674e-06 13.739 -9.53674e-06 11.8801C-9.53674e-06 9.81951 0.221075 8.29578 1.11077 6.52215C1.27175 6.20101 1.39938 5.94493 1.58835 5.62792C1.85102 5.18698 2.38748 4.3718 2.72631 4.02185C3.29035 3.4397 3.44186 3.23755 4.09977 2.65087C4.64281 2.1667 5.9508 1.38981 6.62024 1.05468C9.66687 -0.471109 14.3793 -0.358301 17.2377 1.50344L18.4441 2.32273C18.5947 2.43513 18.7261 2.50347 18.8652 2.6204C20.6508 4.12231 22.009 6.19978 22.6076 8.48311C22.7855 9.16119 23 9.99037 23 10.8352V10.834Z"
+                          fill="white"/>
+                </svg>
+            </button>
+            <a class="tel__btn" href="tel:+79609528155">
+                <svg width="15" height="20" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0 5.65049C0 9.91644 2.80766 14.3258 5.39865 17.4027L7.90277 19.9854C8.05843 20.1225 8.10939 20.1298 8.26631 20.276C11.2387 23.042 16.1071 26.0001 20.3458 26.0001C22.577 26.0001 24.2742 25.1468 25.347 23.5166C26.3922 21.9283 26.1773 20.2561 24.7485 19.1984L23.3842 18.2374C23.0565 18.0154 22.8175 17.8349 22.4821 17.6136C21.1919 16.7621 20.7103 16.0434 19.1108 16.0434C18.3523 16.0434 17.5883 16.4901 17.2007 16.8947C16.9617 17.1443 16.8181 17.3957 16.6094 17.6842C16.3908 17.9865 16.2301 18.1909 16.0589 18.5144C15.8256 18.3911 15.679 18.2665 15.4483 18.1076C12.9871 16.4103 9.6444 13.0448 7.92109 10.5922C7.76694 10.373 7.61103 10.1776 7.48474 9.93854C7.80811 9.76753 8.01273 9.60656 8.31476 9.38784C9.3499 8.63877 9.95522 8.19304 9.95522 6.52262C9.95522 5.64999 9.4325 4.99458 9.04134 4.45694C8.91832 4.28769 8.86836 4.19352 8.74961 4.02176C8.61504 3.82715 8.54399 3.75282 8.41418 3.55795C7.73556 2.53943 6.63891 0.752239 5.65599 0.284662C3.93745 -0.532969 2.31155 0.548835 1.21892 1.78181C0.403461 2.7019 0.00050213 4.35574 0.00050213 5.65075L0 5.65049Z"
+                          fill="white"/>
+                </svg>
+            </a>
+            <div class="location__info">
+                <p class="location__info-text">
+                    <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M2.14924 5.13727C2.14924 4.65606 2.20007 4.27482 2.40003 3.87858C2.53896 3.60299 2.71553 3.3367 2.93747 3.11971C4.03082 2.05078 5.79615 2.05026 6.8735 3.10609C8.17332 4.37995 7.88701 6.60589 6.12238 7.47179C5.06086 7.99264 3.76034 7.73739 2.93782 6.93595C2.55637 6.56435 2.14942 5.87253 2.14942 5.13744L2.14924 5.13727ZM0 4.53542C0 5.35202 0.0513525 5.57608 0.32447 6.37839C0.450741 6.74963 0.77275 7.55349 0.94879 7.90026L2.13025 10.1889C2.18582 10.298 2.23401 10.3677 2.28853 10.4714C2.72661 11.3029 3.42778 12.3613 3.92653 13.188C4.18927 13.6238 4.37499 14 4.94022 14C5.44706 14 5.65757 13.5824 5.88795 13.2055C6.45037 12.2849 6.97655 11.4618 7.51699 10.5074L8.71779 8.23773C9.08728 7.51919 9.82469 5.75154 9.82469 4.97336C9.82469 4.11074 9.73025 3.47286 9.3502 2.73037C9.28144 2.59593 9.22692 2.48873 9.1462 2.35601C9.034 2.17142 8.80484 1.83017 8.66011 1.68367C8.41917 1.43996 8.35446 1.35533 8.07342 1.10973C7.84146 0.907044 7.28274 0.581815 6.99678 0.441519C5.69538 -0.19722 3.68243 -0.149996 2.4614 0.629384L1.94612 0.972366C1.88175 1.01942 1.82565 1.04803 1.76621 1.09698C1.00348 1.72572 0.423306 2.59541 0.167599 3.55128C0.0916255 3.83515 0 4.18227 0 4.53593L0 4.53542Z"
+                              fill="white"/>
+                    </svg>
+                    г. Барнаул, ул. Новгородская, 22
+                </p>
+                <p class="location__info-text">
+                    <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M2.14924 5.13727C2.14924 4.65606 2.20007 4.27482 2.40003 3.87858C2.53896 3.60299 2.71553 3.3367 2.93747 3.11971C4.03082 2.05078 5.79615 2.05026 6.8735 3.10609C8.17332 4.37995 7.88701 6.60589 6.12238 7.47179C5.06086 7.99264 3.76034 7.73739 2.93782 6.93595C2.55637 6.56435 2.14942 5.87253 2.14942 5.13744L2.14924 5.13727ZM0 4.53542C0 5.35202 0.0513525 5.57608 0.32447 6.37839C0.450741 6.74963 0.77275 7.55349 0.94879 7.90026L2.13025 10.1889C2.18582 10.298 2.23401 10.3677 2.28853 10.4714C2.72661 11.3029 3.42778 12.3613 3.92653 13.188C4.18927 13.6238 4.37499 14 4.94022 14C5.44706 14 5.65757 13.5824 5.88795 13.2055C6.45037 12.2849 6.97655 11.4618 7.51699 10.5074L8.71779 8.23773C9.08728 7.51919 9.82469 5.75154 9.82469 4.97336C9.82469 4.11074 9.73025 3.47286 9.3502 2.73037C9.28144 2.59593 9.22692 2.48873 9.1462 2.35601C9.034 2.17142 8.80484 1.83017 8.66011 1.68367C8.41917 1.43996 8.35446 1.35533 8.07342 1.10973C7.84146 0.907044 7.28274 0.581815 6.99678 0.441519C5.69538 -0.19722 3.68243 -0.149996 2.4614 0.629384L1.94612 0.972366C1.88175 1.01942 1.82565 1.04803 1.76621 1.09698C1.00348 1.72572 0.423306 2.59541 0.167599 3.55128C0.0916255 3.83515 0 4.18227 0 4.53593L0 4.53542Z"
+                              fill="white"/>
+                    </svg>
+                    г. Бийск, ул. Васильева, 65
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="banner">
+        <div class="container">
+            <div class="banner__inner">
+                <h1 class="banner__title">
+                    Цифровая зуботехническая лаборатория 3D-art
+                </h1>
+                <div class="banner__text-wrapper">
+                    <img class="banner__text-img" src="img/shild.svg" alt="shild">
+                    <p class="banner__text">
+                        Изготавливаем зубные протезы по технологии CAD/CAM в минимальные сроки, находясь на связи с
+                        партнёрами круглосуточно
+                    </p>
+                </div>
+                <a class="banner__btn btn" href="#callback">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
+    <div class="advantages">
+        <div class="container">
+            <div class="advantages__inner">
+                <div class="advantages__item">
+                    <img class="advantages__item-img" src="img/advantages/advantages-1.svg" alt="advantages">
+                    <h2 class="advantages__item-title">
+                        Удобство
+                    </h2>
+                    <p class="advantages__item-text">
+                        Наличный и безналичный расчет с отчетным документом
+                    </p>
+                </div>
+                <div class="advantages__item">
+                    <img class="advantages__item-img" src="img/advantages/advantages-2.svg" alt="advantages">
+                    <h2 class="advantages__item-title">
+                        Доставка
+                    </h2>
+                    <p class="advantages__item-text">
+                        Доставка по Алтайскому краю и за его пределы
+
+                    </p>
+                </div>
+                <div class="advantages__item">
+                    <img class="advantages__item-img" src="img/advantages/advantages-3.svg" alt="advantages">
+                    <h2 class="advantages__item-title">
+                        Подход
+                    </h2>
+                    <p class="advantages__item-text">
+                        Индивидуальный подход к каждому партнёру
+                    </p>
+                </div>
+                <div class="advantages__item">
+                    <img class="advantages__item-img" src="img/advantages/advantages-4.svg" alt="advantages">
+                    <h2 class="advantages__item-title">
+                        Качество
+                    </h2>
+                    <p class="advantages__item-text">
+                        Работаем по современным медицинским протоколам
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="stages">
+        <div class="container">
+            <div class="stages__inner">
+                <h3 class="stages__title section__title">Этапы работы</h3>
+                <div class="stages__list">
+                    <div class="stages__item">
+                        <div class="stages__img-wrapper">
+                            <img class="stages__item-img" src="img/stages-icon.svg" alt="stages">
+                            <span class="stages__item-number">1</span>
+                        </div>
+                        <div class="stages__info">
+                            <h4 class="stages__info-title">
+                                Пробная работа без заключения договора
+                            </h4>
+                            <p class="stages__info-text">
+                                Так вы сможете оценить работу с нашей зуботехнической лабораторией и принять решение о
+                                дальнейшем сотрудничестве.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__img-wrapper">
+                            <img class="stages__item-img" src="img/stages-icon.svg" alt="stages">
+                            <span class="stages__item-number">2</span>
+                        </div>
+                        <div class="stages__info">
+                            <h4 class="stages__info-title">
+                                Выбор зубного техника
+                            </h4>
+                            <p class="stages__info-text">
+                                В нашей компании работает 15 сотрудников, поэтому вы точно сможете выбрать для себя
+                                подходящего зубного техника.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__img-wrapper">
+                            <img class="stages__item-img" src="img/stages-icon.svg" alt="stages">
+                            <span class="stages__item-number">3</span>
+                        </div>
+                        <div class="stages__info">
+                            <h4 class="stages__info-title">
+                                Заключение договора
+                            </h4>
+                            <p class="stages__info-text">
+                                3D-art лицензированная зуботехническая лаборатория, поэтому мы представляем отчётные
+                                документы о работах.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__img-wrapper">
+                            <img class="stages__item-img" src="img/stages-icon.svg" alt="stages">
+                            <span class="stages__item-number">4</span>
+                        </div>
+                        <div class="stages__info">
+                            <h4 class="stages__info-title">
+                                Знакомство с курьером
+                            </h4>
+                            <p class="stages__info-text">
+                                Наши сотрудники работают с понедельника по пятницу с 9:00 до 18:00 и находятся постоянно
+                                на связи.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__img-wrapper">
+                            <img class="stages__item-img" src="img/stages-icon.svg" alt="stages">
+                            <span class="stages__item-number">5</span>
+                        </div>
+                        <div class="stages__info">
+                            <h4 class="stages__info-title">
+                                Сроки изготовления
+                            </h4>
+                            <p class="stages__info-text">
+                                Врач заполняет заказ-наряд лаборатории и передает оттиски курьеру. В этот же день работа
+                                поступает в зуботехническую лабораторию . Сроки изготовления закреплены в прайсе (5-7-10
+                                рабочих дней в зависимости от сложности).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="stages__item">
+                        <div class="stages__img-wrapper">
+                            <img class="stages__item-img" src="img/stages-icon.svg" alt="stages">
+                            <span class="stages__item-number">6</span>
+                        </div>
+                        <div class="stages__info">
+                            <h4 class="stages__info-title">
+                                Доставка работы
+                            </h4>
+                            <p class="stages__info-text">
+                                По готовности техник передает заказ курьеру, который доставляет его к указанному сроку в
+                                клинику.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="arrange">
+        <div class="container">
+            <div class="arrange__inner">
+                <h4 class="arrange__title">
+                    Оформить пробную работу
+                    <span>бесплатно</span>
+                </h4>
+                <form class="arrange__form" action="">
+                    <input class="arrange__form-input" name="name" type="text" placeholder="Имя">
+                    <input class="arrange__form-input" data-phone-pattern="+7 (___) ___-__-__" data-phone-clear="false"
+                           name="tel" type="tel" placeholder="+7 (___) ___-__-__">
+                    <button class="arrange__form-btn btn" type="submit">Оставить заявку</button>
+                    <p class="arrange__form-text">
+                        *Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь c
+                        <a class="privacy" href="#">Политикой конфиденциальности</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section class="about-us">
+        <div class="container">
+            <div class="about-us__inner">
+                <h3 class="about-us__title section__title">О компании</h3>
+                <div class="about-us__list">
+                    <div class="about-us__info">
+                        <ul class="about-us__text">
+                            <span>
+                                Зуботехническая лаборатория 3D-art работает с 2010 года. Мы сотрудничаем более чем с 50
+                                партнерами по Алтайскому краю и за его пределами. Изготавливаем конструкции из пластмассы,
+                                металлокерамики, прессованной керамики и диоксида циркония. Используем в работе
+                                вакуумно-компрессионное литье.
+                            </span>
+                            <li class="about-us__text-item">
+                                Изготавливаем все виды зуботехнических и Cad/Сam работ.
+                            </li>
+                            <li class="about-us__text-item">
+                                Моделирование протеза производится в программе ExoCAD с применением модуля для
+                                планирования улыбки Smile Creator.
+                            </li>
+                            <li class="about-us__text-item">
+                                Используем только сертифицированные материалы мировых зуботехнических брендов: Renfert,
+                                Bredent, Zhermack, Ivoclar и т.д.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-us__img-wrapper">
+                        <img class="about-us__img" src="img/about-us/about-us-1.png" alt="about-us">
+                        <img class="about-us__img" src="img/about-us/about-us-2.png" alt="about-us">
+                        <img class="about-us__img" src="img/about-us/about-us-3.png" alt="about-us">
+                        <img class="about-us__img" src="img/about-us/about-us-4.png" alt="about-us">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="examples">
+        <button class="examples-close">+</button>
+        <div class="container">
+            <div class="examples__inner">
+                <h3 class="examples__title section__title">Примеры работ</h3>
+                <div class="examples__tabs">
+                    <div class="examples__btns tabs__btn-wrapper">
+                        <button class="examples__btn tabs__btn btn active" data-tab="removable">Съемные</button>
+                        <button class="examples__btn tabs__btn btn" data-tab="nonremovable">Несъемные</button>
+                    </div>
+                    <div class="examples__content active" id="removable">
+                        <div class="examples__item">
+                            <div class="examples__item-slider swiper">
+                                <div class="examples__item-wrapper swiper-wrapper">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-1.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-1.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-1.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-1.png"
+                                         alt="examples">
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <h5 class="examples__item-title">E-MAX тотальное протезирование</h5>
+                            <p class="examples__item-text">
+                                На имплантаты были изготовлены циркониевые индивидуальные
+                                абатменты, а на них установлены также цельнокерамические коронки E-MAX.
+                            </p>
+                        </div>
+                        <div class="examples__item">
+                            <div class="examples__item-slider swiper">
+                                <div class="examples__item-wrapper swiper-wrapper">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-2.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-2.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-2.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-2.png"
+                                         alt="examples">
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <h5 class="examples__item-title">E-MAX тотальное протезирование</h5>
+                            <p class="examples__item-text">
+                                На имплантаты были изготовлены циркониевые индивидуальные
+                                абатменты, а на них установлены также цельнокерамические коронки E-MAX.
+                            </p>
+                        </div>
+                        <div class="examples__item">
+                            <div class="examples__item-slider swiper">
+                                <div class="examples__item-wrapper swiper-wrapper">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-3.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-3.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-3.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-3.png"
+                                         alt="examples">
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <h5 class="examples__item-title">E-MAX тотальное протезирование</h5>
+                            <p class="examples__item-text">
+                                На имплантаты были изготовлены циркониевые индивидуальные
+                                абатменты, а на них установлены также цельнокерамические коронки E-MAX.
+                            </p>
+                        </div>
+                        <div class="examples__item">
+                            <div class="examples__item-slider swiper">
+                                <div class="examples__item-wrapper swiper-wrapper">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-4.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-4.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-4.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-4.png"
+                                         alt="examples">
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <h5 class="examples__item-title">E-MAX тотальное протезирование</h5>
+                            <p class="examples__item-text">
+                                На имплантаты были изготовлены циркониевые индивидуальные
+                                абатменты, а на них установлены также цельнокерамические коронки E-MAX.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="examples__content" id="nonremovable">
+                        <div class="examples__item">
+                            <div class="examples__item-slider swiper">
+                                <div class="examples__item-wrapper swiper-wrapper">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-1.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-1.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-1.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-1.png"
+                                         alt="examples">
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <h5 class="examples__item-title">E-MAX тотальное протезирование</h5>
+                            <p class="examples__item-text">
+                                На имплантаты были изготовлены циркониевые индивидуальные
+                                абатменты, а на них установлены также цельнокерамические коронки E-MAX.
+                            </p>
+                        </div>
+                        <div class="examples__item">
+                            <div class="examples__item-slider swiper">
+                                <div class="examples__item-wrapper swiper-wrapper">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-2.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-2.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-2.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-2.png"
+                                         alt="examples">
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <h5 class="examples__item-title">E-MAX тотальное протезирование</h5>
+                            <p class="examples__item-text">
+                                На имплантаты были изготовлены циркониевые индивидуальные
+                                абатменты, а на них установлены также цельнокерамические коронки E-MAX.
+                            </p>
+                        </div>
+                        <div class="examples__item">
+                            <div class="examples__item-slider swiper">
+                                <div class="examples__item-wrapper swiper-wrapper">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-3.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-3.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-3.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-3.png"
+                                         alt="examples">
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <h5 class="examples__item-title">E-MAX тотальное протезирование</h5>
+                            <p class="examples__item-text">
+                                На имплантаты были изготовлены циркониевые индивидуальные
+                                абатменты, а на них установлены также цельнокерамические коронки E-MAX.
+                            </p>
+                        </div>
+                        <div class="examples__item">
+                            <div class="examples__item-slider swiper">
+                                <div class="examples__item-wrapper swiper-wrapper">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-4.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-4.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-4.png"
+                                         alt="examples">
+                                    <img class="examples__item-img swiper-slide" src="img/examples/examples-4.png"
+                                         alt="examples">
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <h5 class="examples__item-title">E-MAX тотальное протезирование</h5>
+                            <p class="examples__item-text">
+                                На имплантаты были изготовлены циркониевые индивидуальные
+                                абатменты, а на них установлены также цельнокерамические коронки E-MAX.
+                            </p>
+                        </div>
+                    </div>
+
+                    <button class="examples__btn show-more btn">Смотреть полностью</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="price">
+        <div class="container">
+            <div class="price__inner">
+                <h3 class="price__title section__title">Стоимость услуг</h3>
+                <div class="price__btns tabs__btn-wrapper">
+                    <button class="price__btn tabs__btn btn active" data-tab="removable-price">Съемные</button>
+                    <button class="price__btn tabs__btn btn" data-tab="nonremovable-price">Несъемные</button>
+                </div>
+                <div class="price__content active" id="removable-price">
+                    <div class="price__table">
+                        <div class="price__table-row">
+                            <div class="price__table-column">
+                                <img class="price__table-img" src="img/discount.svg" alt="discount">
+                                Вкладка керамическая E.max
+                            </div>
+                            <div class="price__table-column price">
+                                <p class="discount">10 000₽</p>
+                                5 000₽
+                            </div>
+                        </div>
+                        <div class="price__table-row">
+                            <div class="price__table-column">
+                                Вкладка керамическая E.max
+                            </div>
+                            <div class="price__table-column price">
+                                10 000₽
+                            </div>
+                        </div>
+                        <div class="price__table-row">
+                            <div class="price__table-column">
+                                Вкладка керамическая E.max
+                            </div>
+                            <div class="price__table-column price">
+                                10 000₽
+                            </div>
+                        </div>
+                        <div class="price__table-row">
+                            <div class="price__table-column">
+                                Вкладка керамическая E.max
+                            </div>
+                            <div class="price__table-column price">
+                                10 000₽
+                            </div>
+                        </div>
+                        <div class="price__table-row">
+                            <div class="price__table-column download">
+                                <img class="price__table-img" src="img/download.svg" alt="download">
+                                <a class="price__table-link" href="#">Скачать прайс в формате PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price__content" id="nonremovable-price">
+                    <div class="price__table">
+                        <div class="price__table-row">
+                            <div class="price__table-column">
+                                <img class="price__table-img" src="img/discount.svg" alt="discount">
+                                Вкладка керамическая E.max
+                            </div>
+                            <div class="price__table-column price">
+                                <p class="discount">10 000₽</p>
+                                5 000₽
+                            </div>
+                        </div>
+                        <div class="price__table-row">
+                            <div class="price__table-column">
+                                Вкладка керамическая E.max
+                            </div>
+                            <div class="price__table-column price">
+                                10 000₽
+                            </div>
+                        </div>
+                        <div class="price__table-row">
+                            <div class="price__table-column">
+                                Вкладка керамическая E.max
+                            </div>
+                            <div class="price__table-column price">
+                                10 000₽
+                            </div>
+                        </div>
+                        <div class="price__table-row">
+                            <div class="price__table-column">
+                                Вкладка керамическая E.max
+                            </div>
+                            <div class="price__table-column price">
+                                10 000₽
+                            </div>
+                        </div>
+                        <div class="price__table-row">
+                            <div class="price__table-column download">
+                                <img class="price__table-img" src="img/download.svg" alt="download">
+                                <a class="price__table-link" href="#">Скачать прайс в формате PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="price__btn show-more btn">Смотреть полностью</button>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__inner">
+                <h3 class="reviews__title section__title">Отзывы</h3>
+                <div class="reviews__content-wrapper">
+                    <div class="swiper-prev-rev swiper-prev"></div>
+                    <div class="swiper mySwiper reviews__content">
+                        <div class="reviews__list swiper-wrapper">
+                            <div class="reviews__item swiper-slide">
+                                <img class="reviews__item-img" src="img/reviews/avatar-1.png" alt="avatar">
+                                <h4 class="reviews__item-spec">Стоматолог-имплантолог</h4>
+                                <h5 class="reviews__item-name">Анатолий Иванович</h5>
+                                <p class="reviews__item-text">
+                                    Заказывал в компании коронки из диоксида циркония, и был приятно удивлен скоростью
+                                    изготовления. Качество тоже оказалось на высоте, могу смело рекомендовать эту фирму.
+                                </p>
+                            </div>
+                            <div class="reviews__item swiper-slide">
+                                <img class="reviews__item-img" src="img/reviews/avatar-2.png" alt="avatar">
+                                <h4 class="reviews__item-spec">Стоматолог-ортопед</h4>
+                                <h5 class="reviews__item-name">Анна Сергеевна</h5>
+                                <p class="reviews__item-text">
+                                    Не в первый раз пользуюсь услугами этой лаборатории. Очень довольна работой
+                                    курьерской службы. Заказы забирают практически сразу после звонка. Изготавливают и
+                                    привозят всегда очень быстро. Спасибо!
+                                </p>
+                            </div>
+                            <div class="reviews__item swiper-slide">
+                                <img class="reviews__item-img" src="img/reviews/avatar-3.png" alt="avatar">
+                                <h4 class="reviews__item-spec">Стоматолог-хирург</h4>
+                                <h5 class="reviews__item-name">Иван Федорович</h5>
+                                <p class="reviews__item-text">
+                                    Первый раз обратился к ним по телефону, и очень понравилось, что старший техник
+                                    Татьяна подробно обсудила со мной все технические вопросы, касающиеся конструкции
+                                    планируемого протеза.
+                                </p>
+                            </div>
+                            <div class="reviews__item swiper-slide">
+                                <img class="reviews__item-img" src="img/reviews/avatar-1.png" alt="avatar">
+                                <h4 class="reviews__item-spec">Стоматолог-имплантолог</h4>
+                                <h5 class="reviews__item-name">Анатолий Иванович</h5>
+                                <p class="reviews__item-text">
+                                    Заказывал в компании коронки из диоксида циркония, и был приятно удивлен скоростью
+                                    изготовления. Качество тоже оказалось на высоте, могу смело рекомендовать эту фирму.
+                                </p>
+                            </div>
+                            <div class="reviews__item swiper-slide">
+                                <img class="reviews__item-img" src="img/reviews/avatar-2.png" alt="avatar">
+                                <h4 class="reviews__item-spec">Стоматолог-ортопед</h4>
+                                <h5 class="reviews__item-name">Анна Сергеевна</h5>
+                                <p class="reviews__item-text">
+                                    Не в первый раз пользуюсь услугами этой лаборатории. Очень довольна работой
+                                    курьерской службы. Заказы забирают практически сразу после звонка. Изготавливают и
+                                    привозят всегда очень быстро. Спасибо!
+                                </p>
+                            </div>
+                            <div class="reviews__item swiper-slide">
+                                <img class="reviews__item-img" src="img/reviews/avatar-3.png" alt="avatar">
+                                <h4 class="reviews__item-spec">Стоматолог-хирург</h4>
+                                <h5 class="reviews__item-name">Иван Федорович</h5>
+                                <p class="reviews__item-text">
+                                    Первый раз обратился к ним по телефону, и очень понравилось, что старший техник
+                                    Татьяна подробно обсудила со мной все технические вопросы, касающиеся конструкции
+                                    планируемого протеза.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-next-rev swiper-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="arrange callback" id="callback">
+        <div class="container">
+            <div class="arrange__inner">
+                <h4 class="arrange__title">
+                    <span>свяжитесь с нами</span>
+                </h4>
+                <form class="arrange__form callback__form" action="">
+                    <input class="arrange__form-input" name="name" type="text" placeholder="Имя">
+                    <input class="arrange__form-input" data-phone-pattern="+7 (___) ___-__-__" data-phone-clear="false"
+                           name="tel" type="tel" placeholder="+7 (___) ___-__-__">
+                    <button class="arrange__form-btn btn" type="submit">Оставить заявку</button>
+                    <p class="arrange__form-text">
+                        *Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь c
+                        <a class="privacy" href="#">Политикой конфиденциальности</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section class="team">
+        <div class="container">
+            <div class="team__inner">
+                <h3 class="team__title section__title">Наша команда</h3>
+                <div class="team__btns tabs__btn-wrapper">
+                    <button class="team__btn tabs__btn btn active" data-tab="removable-team">Съемные</button>
+                    <button class="team__btn tabs__btn btn" data-tab="nonremovable-team">Несъемные</button>
+                    <button class="team__btn tabs__btn btn" data-tab="orthodontics-team">Ортодонтия</button>
+                </div>
+                <div class="team__content-wrapper">
+                    <div class="swiper-prev-team swiper-prev"></div>
+
+                    <div class="swiper mySwiper team__content active" id="removable-team">
+                        <div class="team__list swiper-wrapper">
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-1.png" alt="team">
+                                <h5 class="team__item-name">Иванов Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на съёмном протезировании
+                                </p>
+                            </div>
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-2.png" alt="team">
+                                <h5 class="team__item-name">Иванов Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на
+                                    несъёмном протезировании
+                                </p>
+                            </div>
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-3.png" alt="team">
+                                <h5 class="team__item-name">Иванова Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на
+                                    несъёмном протезировании
+                                </p>
+                            </div>
+
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-1.png" alt="team">
+                                <h5 class="team__item-name">Иванов Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на съёмном протезировании
+                                </p>
+                            </div>
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-2.png" alt="team">
+                                <h5 class="team__item-name">Иванов Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на
+                                    несъёмном протезировании
+                                </p>
+                            </div>
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-3.png" alt="team">
+                                <h5 class="team__item-name">Иванова Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на
+                                    несъёмном протезировании
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="swiper mySwiper team__content" id="nonremovable-team">
+                        <div class="team__list swiper-wrapper">
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-1.png" alt="team">
+                                <h5 class="team__item-name">Иванов Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на съёмном протезировании
+                                </p>
+                            </div>
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-2.png" alt="team">
+                                <h5 class="team__item-name">Иванов Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на
+                                    несъёмном протезировании
+                                </p>
+                            </div>
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-3.png" alt="team">
+                                <h5 class="team__item-name">Иванова Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на
+                                    несъёмном протезировании
+                                </p>
+                            </div>
+
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-1.png" alt="team">
+                                <h5 class="team__item-name">Иванов Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на съёмном протезировании
+                                </p>
+                            </div>
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-2.png" alt="team">
+                                <h5 class="team__item-name">Иванов Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на
+                                    несъёмном протезировании
+                                </p>
+                            </div>
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-3.png" alt="team">
+                                <h5 class="team__item-name">Иванова Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на
+                                    несъёмном протезировании
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="swiper mySwiper team__content" id="orthodontics-team">
+                        <div class="team__list swiper-wrapper">
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-1.png" alt="team">
+                                <h5 class="team__item-name">Иванов Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на съёмном протезировании
+                                </p>
+                            </div>
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-2.png" alt="team">
+                                <h5 class="team__item-name">Иванов Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на
+                                    несъёмном протезировании
+                                </p>
+                            </div>
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-3.png" alt="team">
+                                <h5 class="team__item-name">Иванова Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на
+                                    несъёмном протезировании
+                                </p>
+                            </div>
+
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-1.png" alt="team">
+                                <h5 class="team__item-name">Иванов Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на съёмном протезировании
+                                </p>
+                            </div>
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-2.png" alt="team">
+                                <h5 class="team__item-name">Иванов Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на
+                                    несъёмном протезировании
+                                </p>
+                            </div>
+                            <div class="team__item swiper-slide">
+                                <img class="team__item-img" src="img/team/team-3.png" alt="team">
+                                <h5 class="team__item-name">Иванова Иван</h5>
+                                <p class="team__item-text">
+                                    Специализируется на
+                                    несъёмном протезировании
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="swiper-next-team swiper-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="documents">
+        <div class="container">
+            <div class="documents__inner">
+                <h3 class="documents__title section__title">Лицензии и документы</h3>
+                <div class="documents__content-wrapper">
+                    <div class="swiper-prev-doc swiper-prev"></div>
+                    <div class="swiper mySwiper documents__content">
+                        <div class="documents__list swiper-wrapper">
+                            <img class="swiper-slide" src="img/documents/documents-1.png" alt="documents">
+                            <img class="swiper-slide" src="img/documents/documents-1.png" alt="documents">
+                            <img class="swiper-slide" src="img/documents/documents-1.png" alt="documents">
+
+                            <img class="swiper-slide" src="img/documents/documents-1.png" alt="documents">
+                            <img class="swiper-slide" src="img/documents/documents-1.png" alt="documents">
+                            <img class="swiper-slide" src="img/documents/documents-1.png" alt="documents">
+
+                            <img class="swiper-slide" src="img/documents/documents-1.png" alt="documents">
+                            <img class="swiper-slide" src="img/documents/documents-1.png" alt="documents">
+                            <img class="swiper-slide" src="img/documents/documents-1.png" alt="documents">
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+                    <div class="swiper-next-doc swiper-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <a class="logo" href="#header">
+                <img class="logo__img" src="img/logo.png" alt="logo">
+            </a>
+            <a class="tel" href="tel:79609528155">+7 (960) 952 81 55</a>
+            <div class="location__info">
+                <p class="location__info-text">г. Бийск, ул. Васильева, 65 </p>
+                <p class="location__info-text">г. Барнаул, ул. Новгородская, 22 </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
